@@ -1,6 +1,6 @@
 <table><tr><td> <em>Assignment: </em> S22-M1-GettingStarted</td></tr>
 <tr><td> <em>Student: </em> Pratima Paudel(pp235)</td></tr>
-<tr><td> <em>Generated: </em> 1/29/2022 3:29:13 PM</td></tr>
+<tr><td> <em>Generated: </em> 1/29/2022 9:32:20 PM</td></tr>
 <tr><td> <em>Grading Link: </em> <a href="https://learn.ethereallab.app/homework/IS601-004-S22/s22-m1-gettingstarted/grade/pp235" target="_blank">Grading</a></table>
 <table><tr><td> <em>Instructions: </em> <ol>
 <li>Create a repository on github, use the format [course]-[section] as the repository name.</li>
@@ -35,15 +35,15 @@
 </td></tr></table>
 <table><tr><td> <em>Deliverable 1: </em> IDE Setup Evidence </td><tr><td><em>Status: </em> <img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot showing requested extensions installed</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/98135375/151676296-65534073-d213-4948-b565-4edad1301d43.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Screen shot of github<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/98135375/151683430-f41fb7b4-3778-4aa1-ac6b-8535356ae2e3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Screen shot extensions<br></p>
 </td></tr>
 </table></td></tr>
 </table></td></tr>
 <table><tr><td> <em>Deliverable 2: </em> Verify Database Creation/Connectivity </td><tr><td><em>Status: </em> <img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot showing your database and initial tables from your IDE MySQL extension</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/98135375/151676340-4f79b774-4672-4b78-b128-ac94dfd48952.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>github<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/98135375/151683513-8173f8fe-b1b0-41a7-b367-2bdb82b8fc66.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Database<br></p>
 </td></tr>
 </table></td></tr>
 </table></td></tr>
@@ -53,7 +53,7 @@
 </table></td></tr>
 <table><tr><td> <em>Deliverable 4: </em> Issues </td><tr><td><em>Status: </em> <img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Did you have any issues? If so, how did you resolve them? If no issues, just type "no issues".</td></tr>
-<tr><td> <em>Response:</em> <p>I understood most of it, except the VS code, I downloaded it but<br>could not figure it out. so I screenshot of git hub and a<br>command window<br></p><br></td></tr>
+<tr><td> <em>Response:</em> <p>I got confused with pycharm and contacted Professor and he helped me with<br>everything.<br></p><br></td></tr>
 </table></td></tr>
 <table><tr><td> <em>Deliverable 5: </em> Pull Request Link </td><tr><td><em>Status: </em> <img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add the pull request link here (it should end in /pull/#)</td></tr>
