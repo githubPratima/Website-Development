@@ -11,7 +11,7 @@ def process_array(num, arr):
     print("\nPositive Output:\n")
     # TODO add new code here to print the desired result
     for x in arr:
-        if (x>=0): #if a number is greater than 0 then list as positive num
+        if (int(x)>=0): #if a number is greater than 0 then list as positive num
             print(x)
 
 print("Problem 3")
