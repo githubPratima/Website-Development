@@ -23,7 +23,7 @@ class MyCalc:
         else:
             raise Exception("Not a number")
 
-    def add(self, num1, num2):
+    def add(self, num1, num2): #ucid=pp235,addtion function
         if num1 == "ans":
             return self.add(self.ans, num2)
         else:
@@ -32,7 +32,7 @@ class MyCalc:
             self.ans = num1+num2
         return self.ans
 
-    def sub(self, num1, num2):
+    def sub(self, num1, num2): #ucid=pp235,substraction function
         if num1 == "ans":
             return self.sub(self.ans, num2)
         else:
@@ -41,7 +41,7 @@ class MyCalc:
             self.ans = num1-num2
         return self.ans
 
-    def mult(self, num1, num2):
+    def mult(self, num1, num2): #ucid=pp235,multiplication function
         if num1 == "ans":
             return self.mult(self.ans, num2)
         else:
@@ -50,7 +50,7 @@ class MyCalc:
             self.ans = num1*num2
         return self.ans
 
-    def div(self, num1, num2):
+    def div(self, num1, num2):  #ucid=pp235,division function
         if num1 == "ans":
             return self.div(self.ans, num2)
         else:
