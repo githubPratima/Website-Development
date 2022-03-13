@@ -62,32 +62,38 @@ class MyCalc:
             else:
                 self.ans = num1 / num2
         return self.ans
+
+    # ucid= pp235 : 3/13/2022 : I am trying to make a square root
     def sqrt(self,N):
         if self._as_number(N) < 0:
             print('Square root of negative number does not exist!')
             return
         else:
-            sqrt = self._as_number(N)**0.5
+            sqrt = self._as_number(N)**0.5  #this code gives square root of the number
             print('Square root of number {}: {}'.format(N,sqrt))
             return sqrt
 
+
+ # ucid= pp235 : 3/13/2022 : I am trying to make a square
     def square(self, n):
         if self._as_number(n) < 0:
             return
         else:
-            return self._as_number(n) ** 2
+            return self._as_number(n) ** 2  #this code gives square of the number
 
+    # ucid= pp235 : 3/13/2022 : I am trying to make a sample mean
     def smean(self, data):
         n = len(data)
         for i in range(n):
-            data[i] = self._as_number(data[i])
+            data[i] = self._as_number(data[i]) #this code gives sample mean of the numbers
         smean = sum(data) / n
         return smean
 
+    # ucid= pp235 : 3/13/2022 : I am trying to make a median
     def median(self, L):
         L.sort()
         lLen = len(L)
-        half = int(lLen / 2)
+        half = int(lLen / 2)  #this code gives median of the numbers
         if lLen % 2 != 0:
             median = L[half]
         else:
@@ -98,32 +104,36 @@ class MyCalc:
             median = median / 2
         return median
 
-    def mode(self, L):
-        modecount = 0
-        for i in range(len(L)):
-            icount = self._as_number(L.count(L[i]))
-            if icount > modecount:
-                mode = self._as_number(L[i])
-                modecount = icount
-        return mode
+    # ucid= pp235 : 3/13/2022 : I am trying to make codes for mode
+    def mode(self,data):
+        counts = {}
+        for item in data:
+            num = self._as_number(item)
+            if num in counts:
+                counts[num] += 1
+            else:
+                counts[num] = 1  # These codes helps to find out the mode
+        return counts
 
-    def svariance(self, data):
+
+    def svariance(self, data): # ucid= pp235 : 3/13/2022 : I am trying to make a sample variance
         n = len(data)
         for i in range(n):
             data[i] = self._as_number(data[i])
         mean = sum(data) / n
 
         deviations = [(self._as_number(x) - mean) ** 2 for x in data]
-        svariance = sum(deviations) / n
+        svariance = sum(deviations) / n #this code gives us the sample variance of numbers.
         return svariance
 
-    def sstd_dev(self, ls):
+
+    def sstd_dev(self, ls): # ucid= pp235 : 3/13/2022 : I am trying to make a standard deviation
         n = len(ls)
         for i in range(len(ls)):
             ls[i] = self._as_number(ls[i])
         mean = sum(ls) / n
         var = sum((x - mean) ** 2 for x in ls) / n
-        sstd_dev = var ** 0.5
+        sstd_dev = var ** 0.5   #this code gives us the standard deviation of numbers.
         return sstd_dev
 
 

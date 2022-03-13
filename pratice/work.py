@@ -64,3 +64,14 @@ def test_csvmean(name,v1,v2,v3,v4,v5,ea):
 
     else:
         assert r != calc._as_number(ea)
+
+
+
+ def mode(self, L):
+        modecount = 0
+        for i in range(len(L)):
+            icount = self._as_number(L.count(L[i]))
+            if icount > modecount:
+                mode = self._as_number(L[i])
+                modecount = icount    #this is the codes to find out the mode.
+        return mode
