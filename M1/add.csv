@@ -1,0 +1,15 @@
+﻿def my_median(sample):
+...     n = len(sample)
+...     index = n // 2
+...     # Sample with an odd number of observations
+...     if n % 2:
+...         return sorted(sample)[index]
+...     # Sample with an even number of observations
+...     return sum(sorted(sample)[index - 1:index + 1]) / 2
+...
+
+>>> my_median([3, 5, 1, 4, 2])
+3
+
+>>> my_median([3, 5, 1, 4, 2, 6])
+3.5
