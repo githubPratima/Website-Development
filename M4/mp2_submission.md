@@ -1,6 +1,6 @@
 <table><tr><td> <em>Assignment: </em> Mini Project 2_Advanced Calculator</td></tr>
 <tr><td> <em>Student: </em> Pratima Paudel(pp235)</td></tr>
-<tr><td> <em>Generated: </em> 3/13/2022 1:31:58 PM</td></tr>
+<tr><td> <em>Generated: </em> 3/17/2022 5:34:00 PM</td></tr>
 <tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/mini-project-2_advanced-calculator/grade/pp235" target="_blank">Grading</a></td></tr></table>
 <table><tr><td> <em>Instructions: </em> <p>Prepare your workspace</p>
 <ol>
@@ -243,6 +243,6 @@ As well as testing the new square and square root modifications.</li>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Mention any difficulties and how you overcame them or what you learned during this mini project.</td></tr>
 <tr><td> <em>Response:</em> <p>I faced a lot of difficulties while doing this project since I am<br>new to coding. Also, the mode was quite confusing. Professor helped me a<br>lot and also I searched codes from the internet.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Pull Request Link(s) for this project</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/18">https://github.com/githubPratima/webdev/pull/18</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/26">https://github.com/githubPratima/webdev/pull/26</a> </td></tr>
 </table></td></tr>
 <table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/mini-project-2_advanced-calculator/grade/pp235" target="_blank">Grading</a></td></tr></table>
