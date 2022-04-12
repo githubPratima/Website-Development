@@ -1,6 +1,6 @@
 import csv #ucid= pp235 : 3/13/2022 : I am trying to test the modes
 import pytest
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCalc
 def grab_test_file2():
     with open("mode.csv") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')

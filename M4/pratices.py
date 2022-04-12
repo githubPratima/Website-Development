@@ -2,8 +2,12 @@ import csv
 
 import pytest
 
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCa
+import csv
 
+import pytest
+
+from M4.MyCalc import MyCalc
 def grab_test_file2():
     with open("random2.csv") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -30,7 +34,7 @@ import csv
 
 import pytest
 
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCalc
 
 def grab_test_file2():
     with open("std.csv") as csv_file:
@@ -68,7 +72,7 @@ import csv
 
 import pytest
 
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCalc
 
 def grab_test_file2():
     with open("mean.csv") as csv_file:
@@ -214,7 +218,7 @@ import csv
 
 import pytest
 
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCalc
 
 def grab_test_file2():
     with open("mode.csv") as csv_file:

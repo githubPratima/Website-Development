@@ -2,7 +2,7 @@ import csv
 
 import pytest
 
-from M4.mycal import MyCalc
+from M4.MyCalc import MyCalc
 
 def grab_test_file2():
     with open("std"
