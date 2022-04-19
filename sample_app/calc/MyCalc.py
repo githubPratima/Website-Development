@@ -24,31 +24,35 @@ class MyCalc:
         else:
             raise Exception("Not a number")
 
-    def calc (self,op,*nums):
-        print (nums)
-        if op== "+":
+    def calc(self, op, *nums):
+        print(op)
+        print(nums)
+        if op == "+":
             return self.add(nums[0],nums[1])
-        elif op=="-":
+        elif op == "-":
             return self.sub(nums[0],nums[1])
-        elif op=="/":
+        elif op == "/":
             return self.div(nums[0],nums[1])
-        elif op=="x":
+        elif op == "x":
             return self.mult(nums[0],nums[1])
-        elif op=="square":
+        elif op == "square":
             return self.square(nums[0],nums[1])
-        elif op=="sqrt":
+        elif op == "sqrt":
             return self.sqrt(nums[0])
 
-        elif op=="smean":
-            return self.smean(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5])
-        elif op=="median":
-            return self.median(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5])
-        elif op=="sstd_dev":
-            return self.sstd_dev(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5])
-        elif op== "mode":
-            return self.mode(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5])
-        elif op== "svariance":
-            return self.svariance(nums[0],nums[1],nums[2],nums[3],nums[4],nums[5])
+        elif op == "smean":
+             nums.pop(0)
+             return self.smean(*nums)
+        elif op == "median":
+            return self.median(*nums)
+        elif op == "sstd_dev":
+            return self.sstd_dev(*nums)
+        elif op == "mode":
+            return self.mode(*nums)
+        elif op == "svariance":
+            return self.svariance(*nums)
+
+
 
 
     def add(self, num1, num2):
@@ -108,11 +112,11 @@ class MyCalc:
         else:
             return self._as_number(n) ** 2  #this code gives square of the number
 
-    # ucid= pp235 : 3/13/2022 : I am trying to make a sample mean
-    def smean(self, data):
+    def smean(self, *data):
+        print(data)
         n = len(data)
         for i in range(n):
-            data[i] = self._as_number(data[i]) #this code gives sample mean of the numbers
+            data[i] = self._as_number(data[i])
         smean = sum(data) / n
         return smean
 
@@ -204,6 +208,9 @@ if __name__ == '__main__':
                 elif "smean" in iSTR:
                     print("doing smean")
                     nums = iSTR.split("smean")[1].strip("[").strip("]").split(",")
+                    print("nums after split")
+                    print(nums)
+
                     r = calc.smean(nums)
                     print("R is " + str(r))
 
