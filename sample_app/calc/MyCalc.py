@@ -24,32 +24,57 @@ class MyCalc:
         else:
             raise Exception("Not a number")
 
-    def calc(self, op, *nums):
+    def calc(self, op, *in_nums):
         print(op)
-        print(nums)
+        print(in_nums)
+        print("Hello")
+        nums = in_nums[1].split(",")
+        print("Bye")
         if op == "+":
+            nums = in_nums
+            print("add nums{}".format(nums))
             return self.add(nums[0],nums[1])
         elif op == "-":
+            nums = in_nums
+            print("Hello")
+            print("sub nums{}".format(nums))
             return self.sub(nums[0],nums[1])
         elif op == "/":
+            nums = in_nums
+            print("div nums{}".format(nums))
             return self.div(nums[0],nums[1])
         elif op == "x":
+            nums = in_nums
+            print("add mult{}".format(nums))
             return self.mult(nums[0],nums[1])
         elif op == "square":
-            return self.square(nums[0],nums[1])
+            nums.pop(0)
+            print("square nums{}".format(nums))
+            return self.square(*nums)
         elif op == "sqrt":
-            return self.sqrt(nums[0])
+            nums.pop(0)
+            print("sqrt nums{}".format(nums))
+            return self.sqrt(*nums)
 
         elif op == "smean":
              nums.pop(0)
+             print("smean nums{}".format(nums))
              return self.smean(*nums)
         elif op == "median":
+            nums.pop(0)
+            print("median nums{}".format(nums))
             return self.median(*nums)
         elif op == "sstd_dev":
+            nums.pop(0)
+            print("sstd_dev nums{}".format(nums))
             return self.sstd_dev(*nums)
         elif op == "mode":
+            nums.pop(0)
+            print("mode nums{}".format(nums))
             return self.mode(*nums)
         elif op == "svariance":
+            nums.pop(0)
+            print("svariance nums{}".format(nums))
             return self.svariance(*nums)
 
 
@@ -94,7 +119,7 @@ class MyCalc:
                 self.ans = num1 / num2
         return self.ans
 
-    # ucid= pp235 : 3/13/2022 : I am trying to make a square root
+
     def sqrt(self,N):
         if self._as_number(N) < 0:
             print('Square root of negative number does not exist!')
@@ -105,14 +130,15 @@ class MyCalc:
             return sqrt
 
 
- # ucid= pp235 : 3/13/2022 : I am trying to make a square
+
     def square(self, n):
         if self._as_number(n) < 0:
             return
         else:
             return self._as_number(n) ** 2  #this code gives square of the number
 
-    def smean(self, *data):
+    def smean(self, *in_data):
+        data = list(in_data)
         print(data)
         n = len(data)
         for i in range(n):
@@ -120,8 +146,10 @@ class MyCalc:
         smean = sum(data) / n
         return smean
 
-    # ucid= pp235 : 3/13/2022 : I am trying to make a median
-    def median(self, L):
+
+    def median(self, *in_L):
+        L= list(in_L)
+        print(L)
         L.sort()
         lLen = len(L)
         half = int(lLen / 2)  #this code gives median of the numbers
@@ -135,8 +163,10 @@ class MyCalc:
             median = median / 2
         return median
 
-    # ucid= pp235 : 3/13/2022 : I am trying to make codes for mode
-    def mode(self,data):
+
+    def mode(self, *in_data):
+        data = list(in_data)
+        print(data)
         counts = {}
         for item in data:
             num = self._as_number(item)
@@ -147,8 +177,10 @@ class MyCalc:
         return counts
 
 
-    def svariance(self, data): # ucid= pp235 : 3/13/2022 : I am trying to make a sample variance
-        n = len(data)
+    def svariance(self, *in_data):
+        data = list(in_data)
+        print(data)
+        n= len(data)
         for i in range(n):
             data[i] = self._as_number(data[i])
         mean = sum(data) / n
@@ -158,8 +190,10 @@ class MyCalc:
         return svariance
 
 
-    def sstd_dev(self, ls): # ucid= pp235 : 3/13/2022 : I am trying to make a standard deviation
-        n = len(ls)
+    def sstd_dev(self, *in_ls):
+        ls = list(in_ls)
+        print(ls)
+        n = len(in_ls)
         for i in range(len(ls)):
             ls[i] = self._as_number(ls[i])
         mean = sum(ls) / n

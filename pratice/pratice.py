@@ -1,4 +1,14 @@
 
+
+
+
+nums = iSTR.split("smean")[1].strip("[").strip("]").split(",")
+print("nums after split")
+print(nums)
+
+
+
+
 nums = iSTR.split("+")
 r = calc.add(nums[0].strip(), nums[1].strip())
 nums = iSTR.split("/")
