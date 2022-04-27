@@ -74,16 +74,22 @@ def upload_csv():
                     if line_count == 0:
                         print(f'Column names are {", ".join(row)}')
                         line_count += 1
+
                     else:
                         print(row)
+                        stored_eq = str(row)
                         op = row.pop(0)
-                        c.calc(op, row)
-
-
-
-
-
-
+                        r = c.calc(op, *row)
+                        sh = SimpleHistory(eq=stored_eq, result=r, user_id=current_user.id)
+                        db.session.add(sh)
+                        try:
+                            db.session.commit()
+                            print("Recorded calculation history")
+                            flash("Recorded calculation history", "success")
+                        except SQLAlchemyError as e:
+                            print(e)
+                            flash(str(e), "error")
+                            db.session.rollback()
 
         except Exception as e:
             print('An exception occurred: {}'.format(e))
