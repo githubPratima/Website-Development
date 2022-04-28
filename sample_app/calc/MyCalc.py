@@ -29,7 +29,14 @@ class MyCalc:
         print(in_nums)
         print("Hello")
         nums = in_nums[1].split(",")
+        if len(nums) == 0:
+            nums = in_nums
+            print(f"Regular list nums: {nums}")
+        else:
+            print(f"List from tuple nums: {nums}")
         print("Bye")
+
+
         if op == "+":
             nums = in_nums
             print("add nums{}".format(nums))

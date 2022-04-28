@@ -38,6 +38,7 @@ def delete_single_history(history_id):
             db.session.rollback()
     else:
         print("Not authorized")
+
         flash("Not authorized to delete other user history", "error")
     return redirect(url_for("mycalc.get_history"))
 
