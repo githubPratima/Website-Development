@@ -25,62 +25,64 @@ class MyCalc:
             raise Exception("Not a number")
 
     def calc(self, op, *in_nums):
-        print(op)
-        print(in_nums)
+        print(f"calc() {op} and {in_nums} {type(in_nums)}")
         print("Hello")
-        nums = in_nums[1].split(",")
+        # removed since this is solved in do_calc()
+        # nums = in_nums[1].split(",")
+        nums = list(in_nums)
+        """print(f"nums after [1] split {nums}")
         if len(nums) == 0:
             nums = in_nums
             print(f"Regular list nums: {nums}")
         else:
             print(f"List from tuple nums: {nums}")
-        print("Bye")
+        print("Bye")"""
 
 
         if op == "+":
-            nums = in_nums
+            #nums = in_nums
             print("add nums{}".format(nums))
             return self.add(nums[0],nums[1])
         elif op == "-":
-            nums = in_nums
+            # = in_nums
             print("Hello")
             print("sub nums{}".format(nums))
             return self.sub(nums[0],nums[1])
         elif op == "/":
-            nums = in_nums
+            #nums = in_nums
             print("div nums{}".format(nums))
             return self.div(nums[0],nums[1])
         elif op == "x":
-            nums = in_nums
+            #nums = in_nums
             print("add mult{}".format(nums))
             return self.mult(nums[0],nums[1])
         elif op == "square":
-            nums.pop(0)
+            #nums.pop(0)
             print("square nums{}".format(nums))
             return self.square(*nums)
         elif op == "sqrt":
-            nums.pop(0)
+            #nums.pop(0)
             print("sqrt nums{}".format(nums))
             return self.sqrt(*nums)
 
         elif op == "smean":
-             nums.pop(0)
+             #nums.pop(0)
              print("smean nums{}".format(nums))
              return self.smean(*nums)
         elif op == "median":
-            nums.pop(0)
+            #nums.pop(0)
             print("median nums{}".format(nums))
             return self.median(*nums)
         elif op == "sstd_dev":
-            nums.pop(0)
+            #nums.pop(0)
             print("sstd_dev nums{}".format(nums))
             return self.sstd_dev(*nums)
         elif op == "mode":
-            nums.pop(0)
+            #nums.pop(0)
             print("mode nums{}".format(nums))
             return self.mode(*nums)
         elif op == "svariance":
-            nums.pop(0)
+            #nums.pop(0)
             print("svariance nums{}".format(nums))
             return self.svariance(*nums)
 

@@ -14,6 +14,7 @@ from .models import SimpleHistory
 c = MyCalc()
 mycalc = Blueprint('mycalc', __name__, url_prefix='/mycalc')
 
+
 @mycalc.route('/history', methods=['GET'])
 def get_history():
     if not current_user.is_anonymous:
@@ -23,6 +24,7 @@ def get_history():
     else:
         results = []
     return render_template("calc-history.html", history=results)
+
 
 @mycalc.route('/delete/<history_id>', methods=['POST'])
 def delete_single_history(history_id):
@@ -78,9 +80,16 @@ def upload_csv():
 
                     else:
                         print(row)
-                        stored_eq = str(row)
+                        # stored_eq = str(row)
+                        original_row = row
                         op = row.pop(0)
                         r = c.calc(op, *row)
+                        # converts the stored_eq to the proper iSTR format to aid in loading history
+                        if op in ["+", "x", "/", "*"]:
+                            stored_eq = f"{row[0]}{op}{row[1]}"
+                        else:
+                            stored_eq = ','.join(original_row)
+                        # end conversion
                         sh = SimpleHistory(eq=stored_eq, result=r, user_id=current_user.id)
                         db.session.add(sh)
                         try:
@@ -100,8 +109,6 @@ def upload_csv():
     return redirect(url_for("mycalc.do_calc"))
 
 
-
-
 @mycalc.route('/', methods=['GET', 'POST'])
 def do_calc():
     # c = calc.MyCalc.AdvMyCalc()
@@ -117,11 +124,18 @@ def do_calc():
             c.ans = c._as_number(r)
         else:
             for check in checks:
-                print(str(checks) + " " + str(iSTR))
+                print("for check loop: " + str(checks) + " " + str(iSTR))
                 if check in iSTR:
                     nums = iSTR.split(check)
-                    print(nums)
+                    print(f"nums before calc: {nums} index[0] {nums[0]}")
                     try:
+                        # Added to fix issue with adv math that generates an empty 0th element
+                        if len(nums[0]) == 0:
+                            nums = nums[1].split(",")
+                            # using list comprehension to
+                            # perform removal
+                            nums = [i for i in nums if i]
+                            print(f"fixed nums {nums}")
                         r = c.calc(check, *nums)
                         print("R is " + str(r))
                     except:
@@ -141,4 +155,3 @@ def do_calc():
             print("The action you tried is not supported, please try again")
             return render_template("my_calc.html", result="UNSUPPORTED", eq=iSTR)
     return render_template("my_calc.html", result="")
-
