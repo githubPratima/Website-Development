@@ -1,0 +1,76 @@
+{% include "bootstrap.html" %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h4 class="strong"/>User History
+        </div>
+        <div class="col"></div>
+        <div class="col" justify-content-end>
+            <form action="delete" method="POST">
+                <input type="submit" value="Delete all"
+                       onclick="return confirm('Are you sure you want to delete all history?')"
+                       class="btn btn-danger"/>
+            </form>
+        </div>
+
+    </div>
+
+    <table class="table">
+        <thread>
+            <th>Equation</th>
+            <th>Result</th>
+            <th>Created</th>
+            <th colspan="2" class="text-center">Actions</th>
+        </thread>
+        <tbody>
+        {% if history|length > 0%}
+        {% for hist in history %}
+        <tr>
+            <td>{{hist.eq}}</td>
+            <td>{{hist.result}}</td>
+            <td>{{hist.created.strftime("%B %d, %Y %I:%M:%S %Z %p")}}</td>
+            <td>
+                <button class="btn btn-secondary" onclick="submitParentForm('{{hist.eq}}', '{{hist.result}}')">Load
+                </button>
+            </td>
+
+            <td>
+                <form action="delete/{{ hist.id }}" method="POST">
+                    <input type="submit" value="Delete"
+                           onclick="return confirm('Are you sure you want to delete this item?')"
+                           class="btn btn-danger"/>
+                </form>
+                <!--                <button class="btn btn-danger" onclick="deleteSingleHistory({{hist.id}})" id="{{hist.id}}">Delete-->
+                <!--                </button>-->
+            </td>
+
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="100%">No history</td>
+        </tr>
+        {% endif %}
+        </tbody>
+        <script>
+            function submitParentForm(eq, result){
+                let form = parent.document.forms[1];
+                form.eq.value = eq;
+                form.result.value = result;
+                form.submit();
+            }
+
+<!--            function deleteSingleHistory(id){-->
+<!--                let form =-->
+<!--                console.log('inside delete single');-->
+<!--                form.submit();-->
+<!--            }-->
+
+        </script>
+    </table>
+</div>
+<style>
+    html{
+    overflow:hidden;
+    }
+</style>
