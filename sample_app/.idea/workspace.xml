@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bc69c67-ba1e-4c45-ac32-19f5339f2cd8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Pflask/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pflask/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pflask/template/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/templates/assign_roles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/templates/create_role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/templates/list_roles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/admin/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/auth/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/auth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/auth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/permission_denied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/templates/test_admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/test/test_basic_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/views/hello.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/auth/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/auth/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/auth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/auth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/mydb.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../milestone1/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/My_calc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/calc-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/csvpratice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/gary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/garycalc_history.html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/garycsv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/garyview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/myviews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/resotorecalc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratice/sirmycalc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/admin/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/admin/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shop/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.github/workflows/GCP-Deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/GCP-Deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/projects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pratice/adit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pratice/adit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pratice/funct.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pratice/funct.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pratice/pratice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pratice/pratice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/MyCalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc/MyCalc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/mydb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/calc-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calc-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/my_calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_basic_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_basic_app.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28LtmHF0C9dc7JTMIzHLY7xAfP7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bc69c67-ba1e-4c45-ac32-19f5339f2cd8" name="Changes" comment="" />
+      <created>1651007860874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651007860874</updated>
+    </task>
+    <servers />
+  </component>
+</project>
