@@ -61,8 +61,8 @@ def delete():
     return redirect(url_for("mycalc.get_history"))
 
 
-@mycalc.route('/upload', methods=['GET', 'POST'])
-def upload_csv():
+@mycalc.route('/upload', methods=['GET', 'POST']) #pp235 , this codes works for uplaoding csv for both simple and advance
+def upload_csv():                                 #functions
     uploaded_file = request.files['file']
     if uploaded_file.filename != '':
         print(uploaded_file.filename)
