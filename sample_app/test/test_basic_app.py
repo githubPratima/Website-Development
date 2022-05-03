@@ -32,6 +32,6 @@ def test_request_example(client):
     assert b"Hello World!" in response.data
 
 def test_post_add(client):
-    response = client.post("/mycalc/", data={"eq":"7+7"})
+    response = client.post("/mycalc/", data={"eq":"10+9"})
     print(response.data)
-    assert b"value=\"14\"" in response.data
+    assert b"value=\"19\"" in response.data
