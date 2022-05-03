@@ -72,7 +72,7 @@ def register_blueprints(app):
 
 if __name__ == "__main__":
     app = create_app()
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8081)))
+    app.run(debug=True, host='localhost', port=int(os.environ.get('PORT', 8081)))
     from auth.models import db
     metadata = MetaData()
     metadata.reflect(bind=db.engine)

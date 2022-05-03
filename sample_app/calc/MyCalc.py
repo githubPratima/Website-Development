@@ -1,3 +1,4 @@
+
 class MyCalc:
     ans = 0
     ops = ["+", "-", "x", "/", "square", "sqrt", "smean", "median", "sstd_dev", "mode", "svariance"]
@@ -291,3 +292,5 @@ if __name__ == '__main__':
     else:
 
         print("Good bye")
+
+
