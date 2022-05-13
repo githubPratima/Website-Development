@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container py-5">
+    {% include "_messages.html" %}
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+    <div class="text-center h1">Register </div>
+    {% from "_formhelpers.html" import render_field %}
+<form method=post enctype="multipart/form-data" id="register-form">
+  {{ form.csrf_token }}
+
+  <div id="msg"></div>
+  <div id="msg_email"></div>
+  <div>
+    {{ render_field(form.username, class="form-control") }}
+    {{ render_field(form.email, class="form-control") }}
+    {{ render_field(form.password, class="form-control") }}
+    {{ render_field(form.confirm, class="form-control") }}
+    {{ render_field(form.role, class="form-select") }}
+  </div>
+  <p><input type=submit id="button" value=Register class="btn btn-dark text-white">
+</form>
+</div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#username").on('input', function(e){
+      $("#msg").hide();
+      $("#button").prop('disabled', false);
+      $.ajax({
+        type:"POST",
+        url:"http://127.0.0.1:5000/check_username",
+        data: $('#register-form').serialize(),
+        dataType:"html",
+        cache: false,
+        success: function(ans){
+          if (ans == "taken"){
+            $('#msg').addClass('alert alert-danger');
+            $("#msg").prepend("this username is taken");
+            $("#msg").show();
+            $("#button").prop('disabled', true)
+          }
+        
+        },
+        error: function(){
+          console.log('there is an error')
+        }
+      })
+    });
+  
+    $("#email").on('input', function(e){
+      $("#msg_email").hide();
+      $("#button").prop('disabled', false);
+      $.ajax({
+        type:"POST",
+        url:"http://127.0.0.1:5000/check_email",
+        data: $('#register-form').serialize(),
+        dataType:"html",
+        cache: false,
+        success: function(ans){
+          if (ans == "taken"){
+            console.log("going here")
+            $('#msg_email').addClass('alert alert-danger');
+            $("#msg_email").prepend("this email is taken");
+            $("#msg_email").show();
+            $("#button").prop('disabled', true)
+          }
+        },
+        error: function(){
+          console.log('there is an error')
+        }
+      })
+    });
+  
+  })
+</script>
+
+
+{% endblock %}
