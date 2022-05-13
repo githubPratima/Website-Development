@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e99c0d-0013-48ff-8436-ed7f6bd9ba4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/flaskshop" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/admin/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/admin/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/myshop.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/myshop.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/products/addBrand.html" beforeDir="false" />
-    </list>
+    <list default="true" id="01e99c0d-0013-48ff-8436-ed7f6bd9ba4a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/flaskshop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
