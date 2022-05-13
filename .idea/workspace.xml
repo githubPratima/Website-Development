@@ -50,8 +50,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/myshop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="MyCalc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/M4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample_app" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M4/MyCalc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample_app/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,19 +157,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyCalc" />
       <item itemvalue="Python.myshop" />
       <item itemvalue="Python.run (2)" />
       <item itemvalue="Python.run (3)" />
       <item itemvalue="Python.run" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.myshop" />
         <item itemvalue="Python.run (2)" />
         <item itemvalue="Python.run (3)" />
-        <item itemvalue="Python.MyCalc" />
       </list>
     </recent_temporary>
   </component>
