@@ -1,6 +1,6 @@
 <table><tr><td> <em>Assignment: </em> IS601 Milestone1 Deliverable</td></tr>
 <tr><td> <em>Student: </em> Pratima Paudel(pp235)</td></tr>
-<tr><td> <em>Generated: </em> 5/13/2022 9:01:41 AM</td></tr>
+<tr><td> <em>Generated: </em> 5/13/2022 3:05:32 PM</td></tr>
 <tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/is601-milestone1-deliverable/grade/pp235" target="_blank">Grading</a></td></tr></table>
 <table><tr><td> <em>Instructions: </em> <ol>
 <li>Checkout Milestone1 branch</li>
@@ -36,7 +36,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
 <tr><td> <em>Response:</em> <p>I created the registration form for the user(admin/forms.py)  data required() to make<br>sure the user fills all the requirements and others are like length validator<br>to check the min/max length, equalTo is to check email if two fields<br>contain same data. In register.html there is an alert message in the jinja<br>template which flash the wrong message if the user types the wrong email,<br>wrong username, and wrong password.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -54,7 +54,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
 <tr><td> <em>Response:</em> <p>In url.py file/@pp route login decorator, I create a flash method in f<br>string which is used to generate messages(you are logged in) in the flask.<br>It creates the message and renders the messages to the next request in<br>HTML templates<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -72,7 +72,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
 <tr><td> <em>Response:</em> <p>In url.py file/@pp route logout decorator, I create a flash method in f<br>string which is used to generate messages(logout is successful) in the flask. It<br>creates the message and renders the messages to the next request in HTML<br>templates<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -100,7 +100,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add the related pull request(s) for these features</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 6: </em> Explain briefly how the process/code works for login-protected pages</td></tr>
 <tr><td> <em>Response:</em> <p>@login_required is the decorator in my url.py which works for login-protected pages. This<br>will prevent a user that is not logged in from visiting the route.<br>If user is not logged in, the user will get redirected to the<br>login page.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 7: </em> Explain briefly how the process/code works for role-protected pages</td></tr>
@@ -115,7 +115,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Briefly explain your CSS at a high level</td></tr>
 <tr><td> <em>Response:</em> <p>I added my CSS style sheet in the static field. CSS is about<br>colors, alignment, fonts and margins, tables, and padding. Also, it gives structure to<br>the header area, formating the header area and background color, centering the body<br>content, I copied CSS from getbootstrap.com In my CSS file. CSS is also<br>including about the background color and the transition of a header of the<br>site. Also the size of products length width and height etc.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 4: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -128,7 +128,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a related pull request</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Briefly explain how you made messages user friendly</td></tr>
 <tr><td> <em>Response:</em> <p>I created the registration form for the user(admin/forms.py)  data required() to make<br>sure the user fills all the requirements and others are like length validator<br>to check the min/max length, equalTo is to check email if two fields<br>contain same data. In register.html there is an alert message in the jinja<br>template which flash the wrong message if the user types the wrong email,<br>wrong username, and wrong password.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 4: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -144,7 +144,7 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Explain briefly how the process/code works (view only)</td></tr>
 <tr><td> <em>Response:</em> <p>I have created a route called @ update username in url.py which is<br>working to update for a profile of the user.<br></p><br></td></tr>
 <tr><td> <em>Sub-Task 4: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
@@ -162,10 +162,10 @@
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works (edit only)</td></tr>
 <tr><td> <em>Response:</em>  <br></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add a link to your deployed app directly to a route related to this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/48">https://github.com/githubPratima/webdev/pull/48</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/52">https://github.com/githubPratima/webdev/pull/52</a> </td></tr>
 </table></td></tr>
 <table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/is601-milestone1-deliverable/grade/pp235" target="_blank">Grading</a></td></tr></table>
