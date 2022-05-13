@@ -1,6 +1,6 @@
 <table><tr><td> <em>Assignment: </em> Mini Project 3 - Flask AdvCalc</td></tr>
 <tr><td> <em>Student: </em> Pratima Paudel(pp235)</td></tr>
-<tr><td> <em>Generated: </em> 5/2/2022 10:42:27 PM</td></tr>
+<tr><td> <em>Generated: </em> 5/2/2022 11:05:29 PM</td></tr>
 <tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/mini-project-3---flask-advcalc/grade/pp235" target="_blank">Grading</a></td></tr></table>
 <table><tr><td> <em>Instructions: </em> <ol>
 <li>Create a new branch called MP3-Flask-AdvCalc</li>
@@ -137,6 +137,6 @@
 <table><tr><td> <em>Deliverable 6: </em> Add a link to your deployed app </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add the link here to the hosted instance</td></tr>
 <tr><td> <a rel="noreferrer noopener" target="_blank" href="https://flask-pp1-gg6uefp37a-uc.a.run.app/mycalc/ ">https://flask-pp1-gg6uefp37a-uc.a.run.app/mycalc/ </a> </td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/40">https://github.com/githubPratima/webdev/pull/40</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/githubPratima/webdev/pull/43">https://github.com/githubPratima/webdev/pull/43</a> </td></tr>
 </table></td></tr>
 <table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S22/mini-project-3---flask-advcalc/grade/pp235" target="_blank">Grading</a></td></tr></table>
