@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01e99c0d-0013-48ff-8436-ed7f6bd9ba4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/myshop" beforeDir="false" afterPath="$PROJECT_DIR$/myshop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/admin/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/admin/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/myshop.db" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/myshop.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/shop/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/shop/templates/products/addBrand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/admin/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/admin/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/myshop.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/myshop.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskshop/shop/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskshop/shop/templates/products/addBrand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
