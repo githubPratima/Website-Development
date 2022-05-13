@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class=" border my-5 py-3 container-fluid">
+                <b class="px-3 py-5"> Your account</b>
+                <a href="#" class="nav-link text-black active" id="update-id-acc"> Account Information </a>
+                <a href="#" class="nav-link text-black" id="change-pwd"> Change Password  </a>
+                <!-- <a href="#" class="nav-link text-black"> Delete your account  </a> -->
+                <hr>
+                
+                <a href="#" class="nav-link text-black"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <b>Become retailer</b></a>
+                <a href="#" class="nav-link text-black"> <b> Your orders</b></a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="update-id">
+                <div class="row py-5">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                    {% from '_formhelpers.html' import render_field %}
+                    <form method=post enctype="multipart/form-data" id="update-form" action="/update-user">
+                        {{ form.csrf_token }}
+                        {% include "_messages.html" %}
+                        <div id="msg"></div>
+                        <div id="msg_email"></div>
+                        <div>
+                          {{ render_field(form.username, class="form-control") }}
+                          {{ render_field(form.email, class="form-control") }}
+                          {{ render_field(form.password, class="form-control") }}
+                        </div>
+                        <p><input type=submit id="button" value=Update class="btn btn-dark text-white">
+                      </form>
+                </div>
+            </div>
+            </div>
+            <div id="update-pwd">
+                <div class="row py-5">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                    
+                    <form method=post enctype="multipart/form-data" id="update-form" action="/update-pwd">
+                        {{ form.csrf_token }}
+                        <div>
+                            {{ render_field(form.new_pwd, class="form-control") }}
+                          {{ render_field(form.password, class="form-control") }}
+                        </div>
+                        <p><input type=submit id="button" value=Update class="btn btn-dark text-white">
+                      </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+              are you sure you want to become retailer?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+              <a href="{{url_for("retailchange", id=current_user.id )}}" class="btn btn-danger">Yes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+      $('#username').val("{{current_user.username}}")
+      $('#email').val("{{current_user.email}}")
+        $('#update-pwd').hide();
+        $('#update-id-acc').on('click', function(){
+            $('#update-pwd').hide();
+            $('#update-id').show();
+        });
+        $('#change-pwd').on('click', function(){
+            $('#update-id').hide();
+            $('#update-pwd').show();
+        })
+    })
+</script>
+<script>
+    $(document).ready(function(){
+      $("#username").on('input', function(e){
+        $("#msg").hide();
+        $("#button").prop('disabled', false);
+        $.ajax({
+          type:"POST",
+          url:"http://127.0.0.1:5000/check_username",
+          data: $('#update-form').serialize(),
+          dataType:"html",
+          cache: false,
+          success: function(ans){
+            if (ans == "taken"){
+              $('#msg').addClass('alert alert-danger');
+              $("#msg").prepend("this username is taken");
+              $("#msg").show();
+              $("#button").prop('disabled', true)
+            }
+          
+          },
+          error: function(){
+            console.log('there is an error')
+          }
+        })
+      });
+    
+      $("#email").on('input', function(e){
+        $("#msg_email").hide();
+        $("#button").prop('disabled', false);
+        $.ajax({
+          type:"POST",
+          url:"http://127.0.0.1:5000/check_email",
+          data: $('#update-form').serialize(),
+          dataType:"html",
+          cache: false,
+          success: function(ans){
+            if (ans == "taken"){
+              console.log("going here")
+              $('#msg_email').addClass('alert alert-danger');
+              $("#msg_email").prepend("this email is taken");
+              $("#msg_email").show();
+              $("#button").prop('disabled', true)
+            }
+          },
+          error: function(){
+            console.log('there is an error')
+          }
+        })
+      });
+    
+    })
+  </script>
+  
+{% endblock %}

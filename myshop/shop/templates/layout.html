@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet" >
+    <link href="{{url_for('static', filename='css/layout.css')}}" rel="stylesheet" >
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    {% block script_tag %}
+    
+    {% endblock %}
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <header class="site-header sticky-top py-1">
+      <nav class="container d-flex flex-column flex-md-row ">
+        <a class="py-2 d-none d-md-inline-block nav-link" href="{{url_for('admin')}}">Home</a>
+        <a class="py-2 d-none d-md-inline-block nav-link" href="{{url_for("show_cart")}}">Cart ({{session['cart'] | length}})</a>
+        <form class="form-inline w-75">
+          <div class="row">
+            <div class="col-lg-8 px-md-1 ps-lg-4">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-md-4 px-md-1">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        {% if current_user.is_authenticated %}
+        <div class="position-absolute end-0 px-5">
+          
+          <div class="dropdown">
+            <a class="py-2 d-none d-md-inline-block nav-link dropbtn" href="#">{{ current_user.username }}</a>
+            <div class="dropdown-content">
+              
+              
+              {% if current_user.role.value == "Retail User" or current_user.role.value == "Site Manager" %}
+              <a href="{{url_for("dashboard")}}"> Dashboard</a>  
+              {% endif %}
+              <a href="{{url_for('settings')}}">Settings</a>
+              <!-- <a href="#">profile</a> -->
+              <a href="#">your orders</a>
+            </div>
+          </div>
+          <a class="py-2 d-none d-md-inline-block nav-link" href="{{url_for('logout')}}">Logout</a>
+        </div>
+        {% else %}
+        <div class="position-absolute end-0 px-5">
+          <a class="py-2 d-none d-md-inline-block nav-link" href="{{url_for('login')}}">Login</a>
+        </div>
+        {% endif %}
+      </nav>
+    </header>
+    {% block content %}
+    
+    {% endblock %}
+
+    <!-- <footer class="bottom-0 p-0 m-0 w-100 bg-dark">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Products</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cart</a></li>
+
+      </ul>
+      <p class="text-center text-muted m-0">© 2021 Company, Inc</p>
+    </footer> -->
+    <script>
+      $(document).ready(function(){
+        setTimeout(() => {
+        $('.alert').fadeOut();
+      }, 2000);
+      })
+     
+    </script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}" ></script>
+    
+  </body>
+</html>
