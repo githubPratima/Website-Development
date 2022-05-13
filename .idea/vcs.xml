@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/flaskshop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myshop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myshop (2)/myshop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myshoppp" vcs="Git" />

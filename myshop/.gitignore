@@ -1,0 +1,4 @@
+.idea
+mydb.db
+__pycache__
+git add .gitignore
