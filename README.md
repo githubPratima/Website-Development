@@ -1,3 +1,5 @@
 g# webdev
 ## Pratima Paudel
-Greetings everyone! Welcome to this repository dedicated to website development, where I am crafting an online shopping platform for a thriving business. Within this website, customers can seamlessly sign up, log in, and explore a user-friendly interface to add their desired tools to the shopping cart, facilitating a seamless online shopping experience. Join us on this exciting journey as we bring the world of e-commerce to life for our valued customers.
+Hello everyone! Welcome to this repository dedicated to the development of scientific calculators. Here, I'm working on crafting some basic functions such as addition, subtraction, multiplication, and division, along with more advanced scientific functions like mean, median, mode, and standard deviation, all conveniently organized in the M4 Folder
+
+The entire project is implemented in Python, leveraging the Flask framework to bring it to life
